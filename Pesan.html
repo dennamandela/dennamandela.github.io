@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Happy Birthday</title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #474e5d;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .right::after {
+            left: -16px;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+        }
+
+        .container {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+
+        .container::before {
+            left: 60px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .left::after, .right::after {
+            left: 15px;
+        }
+
+        .right {
+            left: 0%;
+            }
+        }
+    </style>
+    <body>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h2>21 Februari 2022</h2>
+                    <p>Ditanggal, dibulan dan ditahun ini adalah bertepatan dengan hari lahir nya seorang ayang aku yang bernama Feby Setia Cipta bisa di panggil pebii atau ebi. Aku mau mengucapkan Barakallah fi umrik yaa ayang yg ke 21 tahun, apa yang ayang cita citakan dan yang ayang inginkan semoga tercapai ya. semoga selalu diberikan kesehatannya, panjang umur ayangg dan sehat selalu, jadilah diri sendiri dan ayang yg selalu aku kenal, jadi anak yang selalu berbakti kepada kedua orang tuanya, selalu membahagiakan kedua orang tua ayang dan bisa menjadi kebanggan kedua orang tua ayang. Mungkin aku tidak bisa memberimu kado terindah, namun ucapan dan doa yang tulus dari dalam hati ini bisa membuat kita untuk tetap saling menyayangi dan bersama selamanya. terima kasih ya buat semuanya ayang udah mau bersama aku sampe saat ini dan udah mau nerima kekurangan aku, aku bersyukur banget punya ayang, aku sayang banget sama kmu ayangg, lopyuuuuu</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>2021</h2>
+                    <p>di tahun ini kita lewati bersama dengan penuh suka dan duka ya ayang, aku sangat bersyukur banget bisa kenal sama ayang dari tahun 2017 dan bisa milikin kamu seutuhnya..</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>24 Oktober 2020</h2>
+                    <p>Di tanggal inilah kita balikan lagi ya ayang</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <a href="album.html">Next</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
